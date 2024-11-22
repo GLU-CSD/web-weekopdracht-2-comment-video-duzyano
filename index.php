@@ -37,9 +37,20 @@ if(!empty($_POST)){
 
     <h2>Hieronder komen reacties</h2>
     <p>Maak hier je eigen pagina van aan de hand van de opdracht</p>
+    <?php 
+    
+    ?>
+    <?php
+    echo 'reactions count:' .count($getReactions)
+
+    for($i=0; $i<count($getReactions); $i++) {
+        echo $getReactions[$i]
+    }
+    ?>
 </body>
 </html>
 
 <?php
 $con->close();
 ?>
+
